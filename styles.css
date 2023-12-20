@@ -60,7 +60,8 @@ body {
 }
 
 body {
-    background-color: var(--dark-color);
+    /* background-color: var(--dark-color); */
+    background-color: #000;
 }
 
 h1,
@@ -81,17 +82,55 @@ a {
 }
 
 section {
+    border-top: 0.5rem solid #7473734a;
     width: 100%;
-    height: 70dvh;
     color: #fff;
+    height: 70dvh;
 }
 
 /* Section-1 */
 #section-1 {
-    background: transparent url('./assests/background.jpg') no-repeat center center;
+    position: relative;
+    /* background: transparent url('./assests/background.jpg') no-repeat center bottom 0px; */
+    /* background-position: 44% 66%; */
+    /* background-size: 119%; */
     height: 95vh;
     display: flex;
+    border: none;
     flex-direction: column;
+    /* overflow: hidden; */
+}
+
+#section-1 .background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background img {
+    /* position: absolute; */
+    /* left: 0; */
+    transform: scale(1.05);
+    object-fit: cover;
+    object-position: -120px -190px;
+}
+
+#section-1::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 50%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset rgba(0, 0, 0, 90%) 5px 100px 50px, inset rgba(0, 0, 0, 90%) -5px -100px 50px;
+    /* z-index: 1; */
+}
+
+#section-1>* {
+    z-index: 1;
 }
 
 header {
@@ -213,7 +252,7 @@ option {
     padding: 5px 1rem;
     color: #aaaaaa;
     font-size: 1rem;
-    transition: all 0.2s ease;
+    transition: all 0.4s;
 }
 
 
@@ -228,11 +267,11 @@ option {
 
 }
 
-.input-wrapper input:active+label {
+.input-wrapper:has(input:focus) label {
     top: 0;
     left: 0;
     color: #aaaaaa;
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
 }
 
 .form-container a {
@@ -250,7 +289,7 @@ option {
     background-color: var(--primary-color);
     font-size: 1rem;
     font-weight: 600;
-    padding: 0.3rem 0.8rem;
+    padding: 0.3rem 1.7rem;
     height: var(--min-height);
     display: flex;
     align-items: center;
