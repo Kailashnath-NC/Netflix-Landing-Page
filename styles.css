@@ -1,43 +1,43 @@
 @font-face {
     font-family: 'Netflix Sans';
     font-weight: 100;
-    font-display: optional;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+    /* font-display: optional; */
+    src: url(./assests/fonts/NetflixSans_W_Th.woff2) format('woff2'), url(./assests/fonts/NetflixSans_W_Th.woff) format('woff')
 }
 
 @font-face {
     font-family: 'Netflix Sans';
     font-weight: 300;
-    font-display: optional;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+    /* font-display: optional; */
+    src: url(./assests/fonts/NetflixSans_W_Lt.woff2) format('woff2'), url(./assests/fonts/NetflixSans_W_Lt.woff) format('woff')
 }
 
 @font-face {
     font-family: 'Netflix Sans';
     font-weight: 400;
-    font-display: optional;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+    /* font-display: optional; */
+    src: url(./assests/fonts/NetflixSans_W_Rg.woff2) format('woff2'), url(./assests/fonts/NetflixSans_W_Rg.woff) format('woff')
 }
 
 @font-face {
     font-family: 'Netflix Sans';
     font-weight: 700;
-    font-display: optional;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+    /* font-display: optional; */
+    src: url(./assests/fonts/NetflixSans_W_Md.woff2) format('woff2'), url(./assests/fonts/NetflixSans_W_Md.woff) format('woff')
 }
 
 @font-face {
     font-family: 'Netflix Sans';
     font-weight: 800;
-    font-display: optional;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+    /* font-display: optional; */
+    src: url(./assests/fonts/NetflixSans_W_Bd.woff2) format('woff2'), url(./assests/fonts/NetflixSans_W_Bd.woff) format('woff')
 }
 
 @font-face {
     font-family: 'Netflix Sans';
     font-weight: 900;
-    font-display: optional;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+    /* font-display: optional; */
+    src: url(./assests/fonts/NetflixSans_W_Blk.woff2) format('woff2'), url(./assests/fonts/NetflixSans_W_Blk.woff) format('woff')
 }
 
 :root {
@@ -56,7 +56,11 @@ html,
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Netflix Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Netflix Sans', Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+html {
+    height: fit-content;
 }
 
 body {
@@ -85,7 +89,10 @@ section {
     border-top: 0.5rem solid #7473734a;
     width: 100%;
     color: #fff;
-    height: 70dvh;
+    min-height: 79vh;
+    min-height: 79dvh;
+    /* display: flex; */
+    /* align-items: center; */
 }
 
 /* Section-1 */
@@ -134,6 +141,8 @@ section {
 }
 
 header {
+    position: absolute;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: 1.4rem 12rem;
@@ -200,24 +209,13 @@ option {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
     text-align: center;
     max-width: calc(100% - 4rem);
     margin: auto;
-}
-
-.container h1 {
-    font-size: 3rem;
-    font-weight: 900;
-}
-
-.container h4 {
-    margin-top: 1.4rem;
-    font-size: 1.4rem;
-    font-weight: 400;
 }
 
 .form-container p {
@@ -255,8 +253,6 @@ option {
     transition: all 0.4s;
 }
 
-
-
 .input-wrapper input {
     min-width: 200px;
     flex-grow: 1;
@@ -283,6 +279,156 @@ option {
 }
 
 
+.section-wrapper {
+    margin: 3.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    /* position: relative; */
+    max-width: 1520px;
+    width: calc(100% - 4rem);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 12rem;
+}
+
+
+.wrapper>* {
+    /* experimental */
+    width: 50%;
+    min-width: 445px;
+}
+
+.text-wrapper {
+    /* text-align: center; */
+    /* width: 100%; */
+}
+
+.media-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 10%; */
+}
+
+.tv-video {
+    position: absolute;
+    height: fit-content;
+    width: 72.8%;
+    top: 20.5%;
+    left: 13.2%;
+    z-index: -1;
+}
+
+.downloading {
+    position: absolute;
+    left: 50%;
+    top: 82%;
+    transform: translate(-50%, -50%);
+
+    width: 55%;
+    height: 24%;
+    padding: 10px;
+    background-color: #000;
+    border-radius: 13px;
+    border: 2px solid #747373;
+
+    display: flex;
+    /* gap: 10px; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.downloading>div {
+    height: 100%;
+}
+
+.show-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stranger-things {
+    height: 100%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.box>h5 {
+    font-size: 1rem;
+    margin-top: 2px;
+}
+
+.box>p {
+
+    margin-top: 2px;
+    color: #0071eb;
+}
+
+.download-gif {
+    height: 60% !important;
+}
+
+
+.multiple-devices-video {
+    position: absolute;
+    width: 63%;
+    height: 100%;
+    top: 12%;
+    left: 17%;
+    z-index: -1;
+    /* left: 50%; */
+}
+
+
+section:nth-child(even) .wrapper {
+    flex-direction: row;
+}
+
+section:nth-child(odd) .wrapper {
+    flex-direction: row-reverse;
+}
+
+
+
+
+/* image styles */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Video styles */
+video {
+    width: 100%;
+    /* object-fit: cover; */
+}
+
+/* Text Styles */
+.title {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.description {
+    margin-top: 1.4rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
 
 /* BUTTONS */
 .btn {
@@ -294,6 +440,12 @@ option {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.3s ease;
+
+}
+
+.btn:hover {
+    background-color: rgb(193, 17, 25)
 }
 
 .btn-lg {

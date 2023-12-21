@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <section id="section-1">
         <div class="background">
-            <img alt="" src="./assests/background-small.jpg"
-                srcset="./assests/background-small.jpg 1000w, ./assests/background-medium.jpg 1500w, ./assests/background-large.jpg 1800w">
+            <img alt="" src="./assests/images/background-small-2.jpg"
+                srcset="./assests/images/background-small-2.jpg 1000w, ./assests/images/background-medium-2.jpg 1500w, ./assests/images/background-large-2.jpg 1800w">
         </div>
         <header>
             <div class="logo">
@@ -36,7 +36,7 @@
                                 fill="currentColor"></path>
                         </svg>
                     </div>
-                    <select class="lang-selector" class="language rounded">
+                    <select class="lang-selector language rounded">
                         <option value="English">English</option>
                         <option value="हिन्दी">हिन्दी</option>
                     </select>
@@ -53,8 +53,8 @@
             </div>
         </header>
         <div class="container">
-            <h1>Laughter. Tears. Thrills. Find it all on Netflix.</h1>
-            <h4>Endless entertainment starts at just ₹149. Cancel anytime.</h4>
+            <h1 class="title">Laughter. Tears. Thrills. Find it all on Netflix.</h1>
+            <p class="description">Endless entertainment starts at just ₹149. Cancel anytime.</p>
             <div class="form-container">
                 <p>Ready to watch? Enter your email to create or restart your membership.</p>
                 <div class="input-wrapper">
@@ -77,6 +77,74 @@
         </div>
     </section>
     <section id="section-2">
+        <div class="section-wrapper">
+            <div class="wrapper">
+                <span class="text-wrapper">
+                    <h1 class="title">Enjoy on your TV</h1>
+                    <p class="description">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players
+                        and more.</p>
+                </span>
+                <div class="media-wrapper">
+                    <img src="./assests/images/tv.png" alt="">
+                    <div class="tv-video">
+                        <video width="" height="" autoplay muted loop playsinline>
+                            <source src="./assests/videos/video-in-tv.m4v">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="section-2">
+        <div class="section-wrapper">
+
+            <div class="wrapper">
+                <div class="text-wrapper">
+                    <h1 class="title">Download your shows to watch offline</h1>
+                    <p class="description">Save your favourites easily and always have something to watch.</p>
+                </div>
+                <div class="media-wrapper">
+                    <img src="./assests/images/mobile.jpg" alt="">
+                    <div class="downloading">
+                        <div class="show-details">
+                            <div class="stranger-things">
+                                <img src="./assests/images/stranger-things.png" alt="">
+                            </div>
+                            <div class="box">
+                                <h5>Stranger Things</h5>
+                                <p>Downloading...</p>
+                            </div>
+                        </div>
+
+                        <div class="download-gif">
+                            <img src="./assests/images/download-icon.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="section-3">
+        <div class="section-wrapper">
+
+            <div class="wrapper">
+                <div class="text-wrapper">
+                    <h1 class="title">Watch everywhere</h1>
+                    <p class="description">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+                    </p>
+                </div>
+                <div class="media-wrapper">
+                    <img src="./assests/images/multiple-devices.png" alt="">
+                    <div class="multiple-devices-video">
+                        <video width="" height="" autoplay muted loop playsinline>
+                            <source src="./assests/videos/multiple-devices-video.m4v">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 </body>
