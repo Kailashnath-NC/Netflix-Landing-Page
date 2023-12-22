@@ -27,19 +27,24 @@ const questionList = document.querySelectorAll(".question-section");
 const answerList = document.querySelectorAll(".answer-section");
 
 function closeAllAnswers() {
-  answerList.forEach((answer) => {
+  answerList.forEach((answer, index) => {
     answer.style.maxHeight = null;
+    questionList[index].lastElementChild.style.transform = null;
   });
 }
 
 questionList.forEach((question) =>
   question.addEventListener("click", function () {
     const answer = question.nextElementSibling;
+    const plusIcon = question.lastElementChild;
+    console.log(plusIcon.style.transform);
     if (answer.style.maxHeight) {
       answer.style.maxHeight = null;
+      plusIcon.style.transform = null;
     } else {
       closeAllAnswers();
       answer.style.maxHeight = answer.scrollHeight + "px";
+      plusIcon.style.transform = "rotate(45deg)";
     }
   })
 );

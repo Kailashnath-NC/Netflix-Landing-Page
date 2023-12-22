@@ -89,6 +89,7 @@ a {
     /* height: 100%; */
 }
 
+
 section {
     border-top: 0.5rem solid #7473734a;
     width: 100%;
@@ -230,7 +231,8 @@ option {
     font-weight: 500;
 }
 
-.container .form-container {
+/* .container */
+.form-container {
     margin-top: 1.2rem;
     width: 100%;
     position: relative;
@@ -301,7 +303,7 @@ option {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin: 0 12rem;
+    margin: 0 11rem;
 }
 
 
@@ -402,6 +404,8 @@ option {
 
 .faq-wrapper {
     flex-direction: column !important;
+    /* align-items: center; */
+    /* justify-content: center; */
     gap: 1.4rem;
 }
 
@@ -476,6 +480,58 @@ option {
     margin: 1.7rem 1.7rem;
 }
 
+#section-7 {
+    min-height: unset;
+}
+
+#section-7 div.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.7rem;
+}
+
+#section-7 div.wrapper .language-wrapper {
+    max-width: 7.6rem;
+}
+
+#section-7 div.wrapper>.top {
+    color: rgb(255 255 255 / 70%);
+
+}
+
+#section-7 div.wrapper>span {
+    font-size: 0.85rem;
+    color: rgb(255 255 255 / 70%);
+}
+
+#section-7 a {
+    color: rgb(255 255 255 / 70%);
+
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+#section-7 a[href="tel:+"] {
+    text-decoration-thickness: 2px;
+}
+
+#section-7 ul {
+    font-size: 0.85rem;
+    color: rgb(255 255 255 / 70%);
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem 0.25rem;
+}
+
+#section-7 ul>* {
+    width: calc(25% - 10px);
+}
 
 
 
