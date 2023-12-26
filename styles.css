@@ -250,29 +250,36 @@ option {
     height: 100%;
     width: 100%;
     left: 0;
+    /* top: 0; */
     padding: 5px 1rem;
     text-align: start;
     color: #aaaaaa;
     transition: all 0.4s;
+    z-index: -1;
 }
 
 .input-wrapper input {
     height: 3rem;
 
+    padding: 7px 1rem 0 1rem;
+    color: #fff;
     min-width: 200px;
     flex-grow: 1;
-    background-color: var(--dark-color);
-    padding: 0;
+    /* background-color: var(--dark-color); */
+    background-color: transparent;
     border: 1px solid rgba(128, 128, 128, 0.7);
 
+    &::placeholder {
+        color: transparent;
+    }
 }
 
-.input-wrapper:has(input:focus) label {
+.input-wrapper:has(input:focus) label,
+.input-wrapper:has(input:not(:placeholder-shown)) label {
     font-size: 0.73rem !important;
 
     top: 0;
     left: 0;
-    color: #aaaaaa;
 }
 
 .form-container a {

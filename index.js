@@ -29,7 +29,7 @@ questionList.forEach((question) =>
 const allBtns = document.querySelectorAll(".btn");
 
 allBtns.forEach((btn) =>
-  btn.addEventListener("click", function () {
+  btn.addEventListener("click", function (e) {
     const messages = [
       "Oops! The magic behind these buttons is just an illusion.",
       "Sorry, these buttons are on strike today!",
@@ -37,9 +37,9 @@ allBtns.forEach((btn) =>
       "These buttons were trained by ninjas, but they still won't do anything.",
       "Congratulations! You clicked the button, and nothing happened. Enjoy the show!",
     ];
-
     const randomIndex = Math.floor(Math.random() * messages.length);
     const funMessage = messages[randomIndex];
+    e.preventDefault();
     alert(funMessage);
   })
 );
