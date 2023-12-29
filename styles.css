@@ -253,7 +253,7 @@ option {
     /* top: 0; */
     padding: 5px 1rem;
     text-align: start;
-    color: #aaaaaa;
+    color: #fff;
     transition: all 0.4s;
     z-index: -1;
 }
@@ -265,8 +265,8 @@ option {
     color: #fff;
     min-width: 200px;
     flex-grow: 1;
-    /* background-color: var(--dark-color); */
-    background-color: transparent;
+    background-color: var(--dark-color);
+    /* background-color: transparent; */
     border: 1px solid rgba(128, 128, 128, 0.7);
 
     &::placeholder {
